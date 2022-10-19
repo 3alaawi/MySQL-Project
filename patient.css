@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(54, 202, 153);
+}
+
+#backBtn {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+}
+
+.logoTitle {
+    position: absolute;
+    top: -25px;
+    right: 5px;
+    font-family: "Work Sans" ;
+    font-size: 30px;
+    color: azure;
+}
+
+.welcome {
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 23px;
+    color: azure;
+}
+
+.history {
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 14px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 175px;
+}
+
+
+.medHistory {
+    text-align: center;
+}
+
+
+
+.upcomingAppt {
+    text-align: center;
+}
+
+
+
+.sched {
+    text-align: center;
+}
+
+br {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}

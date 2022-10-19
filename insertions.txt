@@ -1,0 +1,82 @@
+INSERT INTO users Values
+(451236498, 236, 'Richmond Rd', 'Ottawa', 'Ontario', 'Ali', 'Shukri','Yaghi', 'male', 32, 521452, 'ayaghi@gmail.com',4,1,1990,1,'6135154545'),
+(451236154, 16, 'Ines Rd', 'Ottawa', 'Ontario', 'Sawyer', 'Ronaldo','Murphy', 'male', 23, 515442, 'smurphy@gmail.com',3,23,1999,1,'6134511445'),
+(451236972, 34, 'Sparks St', 'Ottawa', 'Ontario', 'Nathan', 'Kante','Mapula', 'male', 28, 551442, 'nmapula@gmail.com',2,20,1994,1,'6131249847'),
+(451251548, 45, 'Terry Fox Rd', 'Ottawa', 'Ontario', 'Peter', 'Messi','Huang', 'male', 35, 415442, 'phuang@gmail.com',4,14,1987,1,'6131542211'),
+(551854718, 37, 'Laurier Ave', 'Ottawa', 'Ontario', 'Mohammed', 'Amer',' Jamieson', 'male', 40, 322442, 'mjamieson@gmail.com',1,1,1982,0,'6138585454'),
+(551597518, 12, 'Scott St', 'Ottawa', 'Ontario', 'Richard', 'Alex', 'Thomas', 'male', 59, 248442, 'rthomas@gmail.com',3,3,1963,0,'6138412626'),
+(134685718, 81, 'Richmond Rd', 'Ottawa', 'Ontario', 'Abbas', 'Matthew', 'Hill', 'male', 68, 111222, 'ahill@gmail.com',12,1,1954,0,'6138451416'),
+(865494718, 22, 'Russell St', 'Ottawa', 'Ontario', 'Alicia', 'Henry', 'Gates', 'female', 35, 695691, 'agates@gmail.com',1,1,1987,0,'6136956948'),
+(451454878, 122, 'Byron Ave', 'Ottawa', 'Ontario', 'Dana', 'Roger', 'Gundogan', 'female', 45, 487691, 'agates@gmail.com',1,1,1987,0,'6136956948'),
+(451547896, 47, 'Evered Ave', 'Ottawa', 'Ontario', 'Patricia', 'Roberto', 'Hernandez', 'female', 30, 664541, 'agates@gmail.com',1,1,1987,0,'6136956948');
+
+INSERT INTO patient Values
+(100, 551854718,'Omar','Amer','Jamieson','Ammar',' Amer',' Jamieson', 'Muataz', 'Amer',' Jamieson'),
+(101, 551597518,'John','Alex','Thomas','Pique', 'Alex', 'Thomas', 'Gerard', 'Alex', 'Thomas'),
+(102, 134685718,'William','Matthew','Hill','Hameed', 'Matthew', 'Hill', 'Hussein', 'Matthew', 'Hill'),
+(103, 865494718,'Darwin','Henry','Gates','Charles', 'Henry', 'Gates', 'Jake', 'Henry', 'Gates');
+
+INSERT INTO branch Values
+(1, 255, 'Laurier Ave', 'Ottawa', 'Ontario', 1),
+(2, 25, 'Robertson Rd', 'Ottawa', 'Ontario', 1);
+
+INSERT INTO employee Values
+(100, 451236498, 120000.0, 1, 0, 'Dentist', 'whitening', 'cleaning','filling'),
+(101, 451236154, 40000.0, 1, 0, 'Receptionist', 'checks in patient', 'makes appointments','answers phone calls'),
+(105, 451454878, 120000.0, 2, 0, 'Dentist', 'whitening', 'cleaning','filling'),
+(104, 451547896, 40000.0, 2, 0, 'Receptionist', 'checks in patient', 'makes appointments','answers phone calls'),
+(103, 451236972, 80000.0, 1, 1, 'Manager', 'manage branch', 'budget reviews','hiring manager'),
+(102, 451251548, 140000.0, 1, 0, 'Dentist', 'whitening', 'cleaning','orthodontist');
+
+INSERT INTO appointment VALUES
+(200,100,100,12,'apr',2022,'12:00 PM','01:00 PM','Checkup',0,'room 1'),
+(205,102,102,11,'mar',2022,'03:00 PM','07:00 PM','Surgery',0,'Surgery Room'),
+(210,101,105,9,'jan',2022,'08:00 AM','10:00 AM', 'Checkup',1,'room 2'),
+(215,101,105,10,'jan',2022,'08:00 AM','10:00 AM','Checkup',1,'room 2');
+
+INSERT INTO AppointmentProcedure VALUES
+(1,100,12,'apr',2022,0000,1,'patient requires scaling due to infection on the gums and fluoride will be applied', 'all teeth',32,32,0,0),
+(2,101,11,'mar',2022,0000,1,'patient requires fluoride due to sensitivity and discomfort', 'left side of mouth',0,32,0,0),
+(3,102,10,'jan',2022,0000,3,'patient requires root canals on 4 grinders also a general scaling and fluoride', 'grinders',32,32,4,4);
+
+
+INSERT INTO records Values
+(700,102,'scaling', null, null),
+(701,100,'scaling', 'fluoride', null),
+(702,101,'scaling', 'fluoride', 'scaling');
+
+INSERT INTO reviews Values
+(600,1,100,'easy parking', 'thank you', 'very clean', 'amazing prices for cleaning'),
+(601,2,101,'nice staff', 'thank you', 'a bit messy they should hire more employees', 'amazing prices for whitening'),
+(602,1,102,'missed appointment doctor called to make sure everything was okay', 'thank you for your feedback', 'very clean', 'worth the price');
+
+INSERT INTO treatment VALUES
+(800,0,1,'front tooth', 'Amoxicillin', 'infection', 'patient must use once every 7 hours',100,100),
+(801,1,2,'grinders', 'Advil', 'sensitivity and discomfort', 'patient must use once every 6 hours',101,105),
+(802,0,0,'wisdom teeth', 'IBUPROFEN', 'discomfort', 'patient must use once every 6 hours',102,102);
+
+INSERT INTO patientbilling VALUES
+(991,100,400,200,541,300,100,'credit'),
+(992,101,401,205,542,200,100,'cash'),
+(993,102,402,210,543,14,0,'on account'),
+(994,102,402,215,544,114,1000,'cash');
+
+INSERT INTO feecharge Values
+(300,'no show',0000, 14,0),
+(0,'nocharge',0000,0,0);
+
+INSERT INTO invoice VALUES
+(1,300,215, 10,'jan',2022,200,100,14,0,314),
+(2,0,200, 12,'apr',2022,300,100,0,0,400),
+(3,0,205, 11,'mar',2022,100,1000,0,0,1100);
+
+INSERT INTO insuranceclaims VALUES
+(541,100,991,100),
+(542,101,992,100),
+(544,102,993,1000);
+
+
+
+
+
+

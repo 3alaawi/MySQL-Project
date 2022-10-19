@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Today Appointment</title>
+        <link href="appointments.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="backBtn">
+            <button type="button" id="backBtn" onclick="location.href='homePage.html'">Back</button>
+        </div>
+
+        <div class="logoTitle">
+            <p>Tooth Fairy</p>
+        </div>
+        <br>
+        <br>
+
+        <div class="welcome" id="welcome">
+            <h1>Todays Appointments</h1>
+        </div>
+        <br>
+
+        <p> Welcome <?php echo $_GET["dentistID"]; ?> </p><br>
+        <p> Todays patients are: <?php echo $_GET["date"]; ?> </p><br>
+
+        <div class="medHistory" id="medHistory">
+            <button type="button" id="button1" onclick="location.href='patientMedicalHistory.php'">Medical History</button>
+        </div>
+
+        <div class="newProcedure" id="newProcedure">
+            <button type="button" id="button2" onclick="location.href='newProcedure.php'">Administer New Procedure</button>
+        </div>
+
+    </body>
+</html>

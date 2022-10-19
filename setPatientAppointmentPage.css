@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(54, 202, 153);
+}
+
+#backBtn {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+}
+
+.logoTitle {
+    position: absolute;
+    top: -25px;
+    right: 5px;
+    font-family: "Work Sans" ;
+    font-size: 30px;
+    color: azure;
+}
+
+p {
+    font-family: "Work Sans";
+    font-size: 23px;
+    color: azure;}
+
+.addApptmtInfoS {
+    text-align: center;
+}
+
+#firstName, #middleName, #lastName, #SSN, #ID, #houseNumber, #streetName {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 250px;
+    margin-left: 15px;
+}
+
+#city, #province, #emailAddress, #phoneNumber, #birthDate {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 250px;
+    margin-left: 15px;
+}
+
+#age {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 50px;
+    margin-left: 15px;
+}
+
+label {
+    color: white;
+}
+
+#genderMale, #genderFemale, #genderOther {
+    margin-left: 15px;
+}
+
+#dependantOneFirstName, #dependantOneMiddleName, #dependantOneLastName, #dependantOneAge {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 250px;
+    margin-left: 15px;
+}
+
+#dependantTwoFirstName, #dependantTwoMiddleName, #dependantTwoLastName, #dependantTwoAge {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 250px;
+    margin-left: 15px;
+}
+
+#dependantThreeFirstName, #dependantThreeMiddleName, #dependantThreeLastName, #dependantThreeAge {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 250px;
+    margin-left: 15px;
+}
+
+#insuranceNumber {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 250px;
+    margin-left: 15px;
+}
+
+#userType {
+    border: 0;
+    border-radius: 10px;
+    height: 25px ;
+    width: 50px;
+    margin-left: 15px;
+}
+
+#submitPatientBtn {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 175px;
+    margin-left: 15px;
+}
+
+br {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}

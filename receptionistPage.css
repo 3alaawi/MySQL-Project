@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(54, 202, 153);
+}
+
+#backBtn {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+}
+
+.logoTitle {
+    position: absolute;
+    top: -25px;
+    right: 5px;
+    font-family: "Work Sans" ;
+    font-size: 30px;
+    color: azure;
+}
+
+.receptionistPageQuestion {
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 23px;
+    color: azure;
+}
+
+#aPI {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 175px;
+}
+
+.addPatientInfo {
+    text-align: center;
+}
+
+#ePI {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 175px;
+}
+
+.editPatientInfo {
+    text-align: center;
+}
+
+#sAPP {
+    border-width: 1px;
+    border-radius: 10px;
+    height: 35px;
+    width: 175px;
+}
+
+.setPatientAppointment {
+    text-align: center;
+}
+
+br {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
